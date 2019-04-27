@@ -1788,8 +1788,25 @@ body {
 .cid-qTkzRZLJNu .dropdown-item:hover {
   color: #c1c1c1 !important;
 }
-.cid-roR8anS13u {
+.cid-roRRApXXeT {
   padding-top: 90px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-roRRApXXeT .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-roRRzvKghk {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.cid-roRRzvKghk .mbr-text,
+.cid-roRRzvKghk blockquote {
+  color: #767676;
+}
+.cid-roR8anS13u {
+  padding-top: 15px;
   padding-bottom: 90px;
   background-color: #ffffff;
 }
