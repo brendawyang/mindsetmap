@@ -1,6 +1,6 @@
 // Code derived from Thomas Forth's original at http://tomforth.co.uk/genderbias/
-var maleWords = ["genius", "eas*", "fast", "iq", "einstein", "excellen\\w*", "superb", "outstanding", "unique", "exceptional", "unparalleled", "\\w{2,}est(\W|$)", "best", "most", "wonderful", "terrific\\w*", "fabulous", "magnificent", "remarkable", "extraordinar\\w*", "amazing", "supreme\\w*", "talent\\w*", "intell\\w*", "smart\\w*"];
-var femaleWords = ["hardworking", "conscientious", "depend\\w*", "meticulous", "thorough", "diligen\\w*", "dedicate", "careful", "passion", "curious", "potential", "growth"];
+var maleWords = ["memory", "quick*", "inherent", "innate", "rarely stides", "doctor", "engineer", "good grade*", "AP", "MENSA", "no effort", "genetics", "gene", "capacity", "genius", "eas*", "fast", "iq", "einstein", "excellen\\w*", "superb", "sharp"];
+var femaleWords = ["hardworking", "passion", "curious", "potential", "growth", "studious", "work ethic", "work hard", "desire", "learn new things", "lifetime learner", "eager", "open-minded", "malleable", "explor*", "challenge"];
 
 function textChanged() {
 	document.getElementById("foundFemaleWords").innerHTML = "";
