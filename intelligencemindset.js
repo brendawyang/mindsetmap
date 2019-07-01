@@ -1,6 +1,6 @@
 // Code derived from Thomas Forth's original at http://tomforth.co.uk/genderbias/
 var fixedWords = ["memory", "quick*", "inherent", "innate", "rarely studies", "never studies", "doctor", "engineer", "good grade*", "AP", "MENSA", "no effort", "genetics", "seemingly", "gene", "capacity", "genius", "eas*", "fast*", "iq", "einstein", "excellen\\w*", "superb", "sharp", "talent*", "effortless*", "naturally","born","gifted","bright","test*","grasp","recall","unique","concepts"];
-var growthWords = ["hardworking", "passion", "curious", "potential", "growth", "studious", "work ethic", "work hard", "desire", "learn new things", "lifetime learner", "eager", "open-minded", "malleable", "explor*", "challenge"];
+var growthWords = ["hardworking", "passion", "curious", "potential", "growth", "studious", "work ethic", "work hard", "dedicated","dedicated with passion","practice","motivat*","flexible","improve","try","desire", "learn new things", "lifetime learner", "eager", "open-minded","open minded", "malleable", "explor*", "challenge","driven","diligent","thorough","interest","adapt","explore", "grow", "growth","push through","love of", "try again", "tries again", "give up", "desire to","willing to learn", "strive to understand","excited about learning", "learn from mistakes"];
 
 function textChanged() {
 	document.getElementById("foundgrowthWords").innerHTML = "";
