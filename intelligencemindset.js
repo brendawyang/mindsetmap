@@ -1,23 +1,23 @@
 // Code derived from Thomas Forth's original at http://tomforth.co.uk/genderbias/
-var maleWords = ["memory", "quick*", "inherent", "innate", "rarely stides", "doctor", "engineer", "good grade*", "AP", "MENSA", "no effort", "genetics", "gene", "capacity", "genius", "eas*", "fast", "iq", "einstein", "excellen\\w*", "superb", "sharp"];
-var femaleWords = ["hardworking", "passion", "curious", "potential", "growth", "studious", "work ethic", "work hard", "desire", "learn new things", "lifetime learner", "eager", "open-minded", "malleable", "explor*", "challenge"];
+var fixedWords = ["memory", "quick*", "inherent", "innate", "rarely studies", "never studies", "doctor", "engineer", "good grade*", "AP", "MENSA", "no effort", "genetics", "seemingly", "gene", "capacity", "genius", "eas*", "fast*", "iq", "einstein", "excellen\\w*", "superb", "sharp", "talent*", "effortless*", "naturally","born","gifted","bright","test*","grasp","recall","unique","concepts"];
+var growthWords = ["hardworking", "passion", "curious", "potential", "growth", "studious", "work ethic", "work hard", "desire", "learn new things", "lifetime learner", "eager", "open-minded", "malleable", "explor*", "challenge"];
 
 function textChanged() {
-	document.getElementById("foundFemaleWords").innerHTML = "";
-	document.getElementById("foundMaleWords").innerHTML = "";
+	document.getElementById("foundgrowthWords").innerHTML = "";
+	document.getElementById("foundfixedWords").innerHTML = "";
 	
 	var letterText = document.getElementById("recommendationLetter").value;
 	var splitLetterText = letterText.split(" ");
 	for (var i = 0; i < splitLetterText.length; i++) {
 		letterWord = splitLetterText[i];
-		for (var maleCounter = 0; maleCounter < maleWords.length; maleCounter++) {
-			if (letterWord.toLowerCase().search(maleWords[maleCounter]) == 0) {
-				document.getElementById("foundMaleWords").innerHTML += '<p>' + letterWord + '</p>';
+		for (var fixedCounter = 0; fixedCounter < fixedWords.length; fixedCounter++) {
+			if (letterWord.toLowerCase().search(fixedWords[fixedCounter]) == 0) {
+				document.getElementById("foundfixedWords").innerHTML += '<p>' + letterWord + '</p>';
 			}
 		}
-		for (var femaleCounter = 0; femaleCounter < femaleWords.length; femaleCounter++) {
-			if (letterWord.toLowerCase().search(femaleWords[femaleCounter]) == 0) {
-				document.getElementById("foundFemaleWords").innerHTML += '<p>' + letterWord + '</p>';
+		for (var growthCounter = 0; growthCounter < growthWords.length; growthCounter++) {
+			if (letterWord.toLowerCase().search(growthWords[growthCounter]) == 0) {
+				document.getElementById("foundgrowthWords").innerHTML += '<p>' + letterWord + '</p>';
 			}
 		}
 	}
@@ -25,7 +25,7 @@ function textChanged() {
 
 var examples = [];
 function example() {
-	var v = "My friend Eric. He is a genius. He learns things very fast and easily. He is on another level";
+	var v = "My friend Eric. He is a genius. He learns things very fast and easily. He is on another level.";
 	if(examples.length > 0){
 		var i = Math.floor(Math.random()*examples.length);
 		v = parseMarkdown(examples[i]);
